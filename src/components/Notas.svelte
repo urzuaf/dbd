@@ -9,7 +9,7 @@
 
     const handleSubmit =()=>{
        if(success.status = true) success.status = false
-       let encInput = encrypt_data(input.trim())
+       let encInput = encrypt_data(input.trim().toLocaleLowerCase())
        let res = data.filter((element)=> element.Column1 == encInput )
        console.log(res)
         if(res.length == 0){
