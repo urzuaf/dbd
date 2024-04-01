@@ -31,14 +31,14 @@
 
 <section >
     <form on:submit|preventDefault={handleSubmit}>
-        <p><strong>Ingresa tu matricula para consultar tus notas</strong></p>
+        <p><strong>Ingresa tu correo institucional para consultar tus notas</strong></p>
         <div>
             <input bind:value={input} type="text">
             <button type="submit">Buscar</button>
         </div>
         {#if !success.status && success.tries > 0}
         <div>
-            <span class="err">La matricula no existe</span>
+            <span class="err">El correo no existe</span>
         </div>
         {:else if !success.status }
             <span></span>
