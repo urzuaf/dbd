@@ -33,7 +33,7 @@
     <form on:submit|preventDefault={handleSubmit}>
         <p><strong>Ingresa tu correo institucional para consultar tus notas</strong></p>
         <div>
-            <input bind:value={input} type="text">
+            <input placeholder="rlopez21@alumnos.utalca.cl" bind:value={input} type="text">
             <button type="submit">Buscar</button>
         </div>
         {#if !success.status && success.tries > 0}
